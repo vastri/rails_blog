@@ -1,10 +1,11 @@
 <article>
-  <h2>
-    <%=
-      link_to article.title, File.basename(article.path, ARTICLE_FORMAT)
-    %>
-  </h2>
-  <small><%= article.time.strftime(TIME_FORMAT) %></small>
+  <% url_path = File.basename(article.path, ARTICLE_FORMAT) %>
+  <h2><%= link_to article.title, url_path %></h2>
+  <small>
+    <%= article.time.strftime(TIME_FORMAT) %>
+    &middot;
+    <%= link_to '', "#{url_path}#disqus_thread" %>
+  </small>
   <hr />
   <%= raw render("#{article.path}") %>
 </article>
