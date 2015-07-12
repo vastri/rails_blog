@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
       name = File.basename(file, ARTICLE_FORMAT)
       SYMBOLS.each { |key, symbol| name.sub!(key, "_#{symbol}_") }
       title = name.titleize
-      time = File.birthtime(file)
+      time = File.stat(file).birthtime
       path = "articles/#{CONTENTS_DIR}/#{File.basename(file)[1..-1]}"
       @articles << Article.new(title, time, path)
     end
