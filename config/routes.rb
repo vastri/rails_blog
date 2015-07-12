@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  root 'main#home'
-
-  get 'main/home'
-  get 'main/about'
+  root 'articles#index'
+  get '*path', to: 'articles#show'
 end

@@ -1,0 +1,54 @@
+// Basis styles in the body tag.
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+@import "custom";
+
+$lightgreen: #00CC66;
+$lightgray: #eeeeee;
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 11pt;
+  font-weight: 100;
+  letter-spacing: 0.5pt;
+  line-height: 20pt;
+  color: #333333;
+}
+
+article {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  img {
+    margin-top: 10px;
+  }
+}
+
+h2 {
+  font-size: 18pt;
+  font-weight: 100;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  &:link, &:visited, &:hover, &:active {
+    color: #00CC66;
+    text-decoration: none;
+  }
+}
+
+small {
+  font-size: 9pt;
+  color: gray;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 10px;
+}

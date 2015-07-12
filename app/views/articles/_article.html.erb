@@ -1,0 +1,10 @@
+<article>
+  <h2>
+    <%=
+      link_to article.title, File.basename(article.path, ARTICLE_FORMAT)
+    %>
+  </h2>
+  <small><%= article.time.strftime(TIME_FORMAT) %></small>
+  <hr />
+  <%= raw render("#{article.path}") %>
+</article>
