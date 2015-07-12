@@ -2,6 +2,13 @@ author: "Yiming Chen"
 time_format: "%B %d, %Y"
 article_format: ".html.md"
 
+development:
+  disqus_shortname: yimingchen
+test:
+  disqus_shortname: yimingchen
+production:
+  disqus_shortname: yimingchen
+
 symbols:
   __1__: "!"
   __2__: "@"
