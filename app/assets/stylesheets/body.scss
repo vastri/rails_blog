@@ -13,7 +13,7 @@ $lightgray: #eeeeee;
 body {
   font-family: "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 11pt;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.5pt;
   line-height: 20pt;
   color: #333333;
@@ -25,15 +25,35 @@ article {
   img {
     margin-top: 10px;
   }
+  pre {
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+    &.prettyprint {
+      border: none;
+    }
+  }
 }
 
 h2 {
   font-size: 18pt;
-  font-weight: 100;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 16pt;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 20px;
 }
 
 img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 a {
