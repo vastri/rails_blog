@@ -4,7 +4,7 @@
   <small>
     <%= article.time.strftime(TIME_FORMAT) %>
     &middot;
-    <%= link_to 'Comments', "#{url_path}#disqus_thread" %>
+    <%= link_to 'Comment', "#{url_path}#disqus_thread" %>
   </small>
   <hr />
   <%= raw render("#{article.path}") %>
