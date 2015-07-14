@@ -4,6 +4,7 @@
   <% url_path = File.basename(article.path, ARTICLE_FORMAT) %>
   <h2><%= link_to article.title, url_path %></h2>
   <small>
+    <%= image_tag 'layouts/avatar.png', alt: 'avatar' %>
     <%= article.time.strftime(TIME_FORMAT) %>
     &middot;
     <%= link_to 'Comment', "#{url_path}#disqus_thread" %>
